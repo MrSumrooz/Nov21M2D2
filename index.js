@@ -12,18 +12,31 @@
 let genres = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"]
 
 
+
+
 let newList = function(){
     
     
     let parentNode = document.getElementById("Un-Orderlist")
     let newListElement = document.createElement("ul")
     parentNode.appendChild(newListElement)
+    newListElement.classList.add("mt-4")
+
+    for ( i = 1; i <= 5; i++)
+{
+    let liNode = document.createElement("li");  
     
-    let newParentNode = newListElement 
-    let newLi = document.createElement("li")
-    newLi.innerText = "new list"
-    newParentNode.appendChild(newLi)
+    
+    liNode.innerHTML = genres
+   newListElement.appendChild(liNode)
+  
+}
+ 
 
 }
 
 newList()
+
+
+
+
