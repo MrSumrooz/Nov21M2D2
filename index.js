@@ -22,12 +22,13 @@ let newList = function(){
     parentNode.appendChild(newListElement)
     newListElement.classList.add("mt-4")
 
-    for ( i = 1; i <= 5; i++)
+    for ( i = 1; i < genres.length ; i++)
 {
     let liNode = document.createElement("li");  
     
     
-    liNode.innerHTML = genres
+    
+    liNode.innerHTML = genres[i]
    newListElement.appendChild(liNode)
   
 }
